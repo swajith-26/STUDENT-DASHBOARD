@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #1976d2;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 15px;
+}
