@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
+import Login from "./components/Login";
 import Header from "./components/Header";
-
 import Dashboard from "./components/Dashboard";
 import Profile from "./components/Profile";
 import AttendanceCalculator from "./components/AttendanceCalculator";
@@ -13,8 +13,13 @@ import FocusTimer from "./components/FocusTimer";
 
 function App() {
   const [activePage, setActivePage] = useState("dashboard");
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { darkMode, toggleTheme } = useContext(ThemeContext);
+
+  // Show Login Page First
+  if (!isLoggedIn) {
+    return <Login onLogin={() => setIsLoggedIn(true)} />;
+  }
 
   const renderPage = () => {
     switch (activePage) {
@@ -50,8 +55,6 @@ function App() {
 
       <div className="container">
         <div className="sidebar">
-          
-
           <button onClick={() => setActivePage("dashboard")}>
             Dashboard
           </button>

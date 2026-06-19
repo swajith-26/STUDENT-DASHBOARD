@@ -142,3 +142,64 @@ button {
   background: #2d89ef;
   border-radius: 10px;
 }
+/* LOGIN PAGE */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2d89ef, #6a5acd);
+}
+
+.login-card {
+  width: 400px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-card h1 {
+  margin-bottom: 10px;
+  color: #2d89ef;
+}
+
+.login-card p {
+  margin-bottom: 15px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2d89ef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-card button:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.demo-credentials {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
